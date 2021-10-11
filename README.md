@@ -56,7 +56,7 @@ $ qemu-system-x86_64 -m 16G -hda /opt/kvm/kvm-01.qcow2 \
 -device vhost-vsock-pci,id=vhost-vsock-pci0,guest-cid=3 \
 -vnc :0 --enable-kvm -daemonize \
 -net nic \
--net tap,ifname=vnet01,script=/etc/qemu-ifup,downscript=qemu-ifdown
+-net tap,ifname=vnet01,script=/etc/qemu-ifup,downscript=/etc/qemu-ifdown
 ```
 
 
